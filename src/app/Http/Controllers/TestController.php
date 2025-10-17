@@ -8,6 +8,8 @@ class TestController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $item = ['content' => 'ゆりちゃんかわいいね！',
+        ];
+        return view('index',$item);
     }
 }
